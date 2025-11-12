@@ -68,41 +68,6 @@ Default patterns:
 - **Enable auto-detection**: Show tabs when encrypted payloads detected
 - **Highlight encrypted payloads**: Highlight requests in HTTP history (cyan)
 
-## Usage
-
-### Basic Workflow
-
-1. Capture encrypted request in Proxy
-2. Send to Repeater
-3. Click **Decrypted** tab
-4. View plaintext JSON
-5. Modify as needed
-6. Send - SEH automatically re-encrypts
-
-### Testing for Injection Vulnerabilities
-
-SEH enables testing through encrypted channels:
-
-```json
-Original decrypted:
-{"userId": 123, "action": "getData"}
-
-Modified for testing:
-{"userId": "1' OR '1'='1", "action": "getData"}
-```
-
-SEH re-encrypts the modified payload, allowing injection testing through encryption layers.
-
-### XSS Through Encrypted Channel
-
-```json
-{
-  "name": "\"><marquee direction=\"up\">Chocolate rain",
-  "email": "test@test.com"
-}
-```
-
-
 ## How It Works
 
 1. **Detection**: SEH scans JSON request/response bodies for configured field names
@@ -111,12 +76,6 @@ SEH re-encrypts the modified payload, allowing injection testing through encrypt
 4. **Modification**: User edits plaintext JSON in tab
 5. **Re-encryption**: SEH encrypts modified content using configured algorithm
 6. **Highlighting**: Cyan highlight applied to encrypted messages in HTTP history
-
-## Requirements
-
-- Burp Suite Professional or Community Edition (2023.x+)
-- Jython 2.7.2+ standalone JAR
-- Java 8+ (bundled with Burp)
 
 ## Troubleshooting
 
