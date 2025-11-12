@@ -11,6 +11,8 @@ Burp Suite extension for detecting, decrypting, modifying, and re-encrypting sym
 - **Lazy Decryption**: Performance focused on-demand decryption
 - **Real-time Re-encryption**: Automatically re-encrypts modified content
 
+<img width="875" height="466" alt="513115689-02e0fdd4-e627-484b-9840-87a79ae0d5f9" src="https://github.com/user-attachments/assets/e9edf3ae-9d8d-4839-9c3f-6200f417d834" />
+
 ## Installation
 
 ### Prerequisites
