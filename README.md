@@ -1,6 +1,7 @@
 # Symmetric Encryption Handler (SEH)
 
 Burp Suite extension for detecting, decrypting, modifying, and re-encrypting symmetric encrypted HTTP payloads.
+**Note: CLICK SAVE.**
 
 ## Features
 
@@ -18,17 +19,6 @@ Burp Suite extension for detecting, decrypting, modifying, and re-encrypting sym
 ### Prerequisites
 - Burp Suite Professional or Community Edition
 - Jython 2.7.2+ standalone JAR
-
-### Steps
-
-1. Download `SymmetricEncryptionHandler.py`
-2. In Burp Suite: **Extender** > **Options**
-3. Under Python Environment, set Jython standalone JAR location
-4. Go to **Extender** > **Extensions** > **Add**
-5. Set Extension Type to **Python**
-6. Select `SymmetricEncryptionHandler.py`
-7. Click **Next**
-8. Verify "Extension loaded" appears in output
 
 ## Supported Algorithms
 
