@@ -1,7 +1,10 @@
 # Symmetric Encryption Handler (SEH)
 
 Burp Suite extension for detecting, decrypting, modifying, and re-encrypting symmetric encrypted HTTP payloads.
-**Note: CLICK SAVE.**
+
+**Quick notes:**
+* CLICK SAVE WHEN YOU SET YOUR KEYS.
+* Needs some more flexibility support but works for most immediate use cases and implementations that I've personally been testing.
 
 ## Features
 
@@ -29,7 +32,7 @@ Burp Suite extension for detecting, decrypting, modifying, and re-encrypting sym
 | 3DES (DESede) | CBC, ECB | 24 bytes | 8 bytes |
 | Blowfish | CBC, ECB | 4-56 bytes | 8 bytes |
 
-**Note:** ECB mode does not use an IV. GCM mode uses authenticated encryption.
+**Note:** ECB mode does not use an IV.
 
 ## Configuration
 
